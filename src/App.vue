@@ -147,7 +147,9 @@ const narrativeEvents = ref([
             </p>
 
             <div class="space-y-4">
-                <div v-for="item in guidanceMetrics" :key="item.id" class="glass-panel p-5 rounded-xl border-l-4 border-l-red-500 hover:bg-slate-800/50 transition-all cursor-pointer group">
+                <div v-for="item in guidanceMetrics" :key="item.id" 
+                     class="glass-panel p-5 rounded-xl border-l-4 hover:bg-slate-800/50 transition-all cursor-pointer group"
+                     :class="item.status === 'Warning' ? 'border-l-yellow-500' : 'border-l-red-500'">
                     <div class="flex justify-between items-start mb-3">
                         <h3 class="font-semibold text-slate-200">{{ item.metric }}</h3>
                         <span class="text-xs font-bold px-2 py-1 rounded uppercase tracking-wider"
