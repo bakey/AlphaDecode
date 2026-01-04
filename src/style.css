@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.glass-panel {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.sentiment-gradient {
+    background: linear-gradient(90deg, #ef4444 0%, #eab308 50%, #22c55e 100%);
+}
