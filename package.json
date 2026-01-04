@@ -6,7 +6,8 @@
   "packageManager": "pnpm@10.19.0",
   "scripts": {
     "dev": "vite",
-    "build": "turbo build",
+    "build": "turbo run build:dist",
+    "build:dist": "vite build",
     "lint": "turbo lint",
     "preview": "vite preview"
   },
