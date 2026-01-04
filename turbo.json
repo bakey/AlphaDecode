@@ -1,0 +1,22 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "#注意": "Vue/Vite 默认打包输出到 dist 目录。如果你改过 vite.config.js，请同步修改这里。",
+      "outputs": ["dist/**"],
+      "env": [
+        "VITE_APP_BASE_API", 
+        "VITE_PUBLIC_PATH", 
+        "NODE_ENV"
+      ]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
